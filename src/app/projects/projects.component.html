@@ -1,11 +1,11 @@
-<div id="projects" class="container-fluid">
+<section id="projects" class="container-fluid">
 	<h3>My Work</h3>
 
 	<div *ngFor="let project of projectsObservable | async; let i = index" class="row">
 	
-			<div class="col-12">
+			<header class="col-12">
 				<img src="../../assets/images/{{project.title}}.png" class="img-fluid">
-			</div>
+      </header>
 	
 		<!-- If counter is divisible by two -->
       <div
@@ -55,4 +55,4 @@
 			<p>More of my work can be viewed <a href="https://github.com/Buraisx" target="_blank" class="anchor">HERE!</a></p>
 		</div>
 	</div>
-</div>
+</section>
